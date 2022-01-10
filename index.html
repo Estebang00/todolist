@@ -5,22 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List 73</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <main>
+        <header class="fecha">
+            <div class="fecha-izquierda">
+                <div id="fecha-numero"></div>
+                <div>
+                    <div id="fecha-mes"></div>
+                    <div id="fecha-anio"></div>
+                </div>              
+            </div>
+            <div id="dia-de-semana"></div>
+        </header>
+        
+        
+        <form id="formulario" action="">
+            <input type="text" placeholder="Ingrese tarea..." id="tareaInput" autocomplete="off" class="borde-redondeado">
+            <button id="agregarTareaBtn" class="borde-redondeado">➕</button>
+        </form>
 
-    <form action="">
-        <input type="text" placeholder="Ingrese tarea..." id="tareaInput">
-        <button id="agregarTareaBtn">➕</button>
-    </form>
+        <hr>
 
-    <hr>
-
-    <ul id="listaDeTareas">
-    </ul>
+        <ul id="listaDeTareas">
+        </ul>
+    
+    
+    </main>    
     <script src="app.js"></script>
-
-
     
    
 </body>
